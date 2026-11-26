@@ -104,7 +104,7 @@ Fraunces (600) for headlines only, with tight tracking. IBM Plex Sans for body c
 
 ## Layout
 
-1200px content width centred on a 1440px canvas. 128px between sections, 16 to 32px inside groups. Hero: headline, one sentence and two buttons on the left (5 columns); a real slice of the product on the right (7 columns), slightly cropped by the viewport edge. Then: three benefits with numbers, a 4-step "how it works" strip, pricing (two plans), FAQ, footer.
+1200px content width centred on a 1440px canvas. 128px between sections, 16 to 32px inside groups. Hero: headline, one sentence and two buttons on the left (5 columns); a real slice of the product on the right (7 columns), slightly cropped at the right edge of its section (clip it with `overflow: hidden` on the section; the page itself must never scroll sideways). Then: three benefits with numbers, a 4-step "how it works" strip, pricing (two plans), FAQ, footer.
 
 ## Elevation & Depth
 
@@ -132,3 +132,4 @@ Calm, competent and a bit dry. Concrete numbers over adjectives: "Most teams ans
 - Don't use gradients, glassmorphism, emoji or icon-topped feature cards.
 - Don't centre long paragraphs.
 - Don't add logo walls or testimonials with invented names; leave a slot for real ones.
+- Don't let anything make the page scroll sideways.
